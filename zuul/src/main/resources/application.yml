@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: zuul
+
+zuul:
+  routes:
+    service.url: http://localhost:8082
+  ribbon-isolation-strategy: THREAD
+
+ribbon.eureka.enabled: false
