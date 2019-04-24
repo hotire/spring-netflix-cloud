@@ -10,4 +10,10 @@ zuul:
     service.url: http://localhost:8082
   ribbon-isolation-strategy: THREAD
 
+management:
+endpoints:
+  web:
+    exposure:
+      include: 'hystrix.stream'
+
 ribbon.eureka.enabled: false

@@ -1,25 +1,6 @@
 # spring-boot-cloud
 study
 
-## Circuit Breaker
-일명 누전 차단기, MSA에서도 한 서비스가 다른 서비스의 의존성이 있을 경우 영향을 끼칠 수 있다. 
-
-특히, 하나의 서비스가 비정상적으로 동작할 경우 다른 서비스의 장애 전파하게 된다. 
-
-이럴 때 Circuit breaker를 통해 에러를 핸들링한다. 
-
-- Circuit이 오픈된 메서드는 주어진 시간 동안 호출이 제한되며, 즉시 에러를 반환한다. 
-
-
-### Failure as a First Class Citizen
-
-분산 시스템, 특히 클라우드 환경에서 실패는 일반적인 표준이다.
-
-한 서비스의 가동률(uptime) 최대 99.99%, 30대의 서버가 있을 때
-
-- 99.99 x 30 = 99.7% uptime
-- 10억 요청 중 0.3 실패 = 300만 요청이 실패
-
 ## Hystrix
 - Latency Tolerance and Fault Tolerance for Distributed Systems
 
@@ -50,3 +31,30 @@ study
   
 ### Getting Started Circuit Breaker
 - https://spring.io/guides/gs/circuit-breaker/
+
+### Circuit Breaker
+일명 누전 차단기, MSA에서도 한 서비스가 다른 서비스의 의존성이 있을 경우 영향을 끼칠 수 있다. 
+
+특히, 하나의 서비스가 비정상적으로 동작할 경우 다른 서비스의 장애 전파하게 된다. 
+
+이럴 때 Circuit breaker를 통해 에러를 핸들링한다. 
+
+- Circuit이 오픈된 메서드는 주어진 시간 동안 호출이 제한되며, 즉시 에러를 반환한다. 
+
+
+### Failure as a First Class Citizen
+
+분산 시스템, 특히 클라우드 환경에서 실패는 일반적인 표준이다.
+
+한 서비스의 가동률(uptime) 최대 99.99%, 30대의 서버가 있을 때
+
+- 99.99 x 30 = 99.7% uptime
+- 10억 요청 중 0.3 실패 = 300만 요청이 실패
+
+
+## Eureka
+
+Service Registry, DiscoveryClient의 구현체다.
+
+: 서비스의 탐색과 등록, 즉 클라우드의 전화번호부
+
