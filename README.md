@@ -67,11 +67,15 @@ MSA와 같은 여러 서비스에 걸쳐 일어나는 트랜잭션에 대한 로
 굳이 MSA가 아닌 Webflux와 같이 스레드 전환이 많이 일어나는 경우 사용하면 효과적이다. 
 
 ​
-### Span ID 
+- Span ID 
 
 작업의 기본 단위로, 각 서비스 호출시 마다 생성한다.
 ​
-### Trace ID
+- Trace ID
 
 최초 호출시 생성되는 ID로, 모든 서비스를 묶어준다. 
+
+### Servlet 기반 동작 원리 TracingFilter 와 LazyTraceExecutor + RestTemplate
+
+https://blog.naver.com/gngh0101/221528363196
 
