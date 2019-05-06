@@ -58,6 +58,17 @@ Service Registry, DiscoveryClient의 구현체다.
 
 : 서비스의 탐색과 등록, 즉 클라우드의 전화번호부
 
+Server
+
+: 모든 micro service가 자신의 service를 등록하는 Registry 
+
+Client
+
+: Server로 부터 Registry 정보를 읽어와 로컬에 캐시
+
+
+https://blog.naver.com/gngh0101/221530971047
+
 
 ## Sleuth
 MSA와 같은 여러 서비스에 걸쳐 일어나는 트랜잭션에 대한 로그 트레이싱이다. 
