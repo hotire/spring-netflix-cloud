@@ -71,6 +71,7 @@ https://blog.naver.com/gngh0101/221530971047
 
 
 ## Sleuth
+
 MSA와 같은 여러 서비스에 걸쳐 일어나는 트랜잭션에 대한 로그 트레이싱이다. 
 
 하나의 연관된 ID를 통해 로그마다 찍어준다.
@@ -90,3 +91,6 @@ MSA와 같은 여러 서비스에 걸쳐 일어나는 트랜잭션에 대한 로
 
 https://blog.naver.com/gngh0101/221528363196
 
+### Webflux Reactive 기반 동작 원리 - 1
+
+https://blog.naver.com/gngh0101/221574435601
