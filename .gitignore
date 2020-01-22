@@ -29,7 +29,10 @@ HELP.md
 ### VS Code ###
 .vscode/
 
+**/target/
+
 
 eureka/target/
 service/target/
 zuul/target/
+
