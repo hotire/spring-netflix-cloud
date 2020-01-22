@@ -4,10 +4,18 @@ server:
 spring:
   application:
     name: zuul
+  zipkin:
+    baseUrl: http://127.0.0.1:9411/
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
 
 zuul:
   routes:
-    service.url: http://localhost:8082
+    service:
+      path: /service/**
+      url: http://localhost:8082
   ribbon-isolation-strategy: THREAD
 
 management:
@@ -17,3 +25,9 @@ endpoints:
       include: 'hystrix.stream'
 
 ribbon.eureka.enabled: false
+
+
+
+sample:
+  zipkin:
+    enabled: true
