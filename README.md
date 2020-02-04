@@ -87,10 +87,15 @@ MSA와 같은 여러 서비스에 걸쳐 일어나는 트랜잭션에 대한 로
 
 최초 호출시 생성되는 ID로, 모든 서비스를 묶어준다. 
 
-### Servlet 기반 동작 원리 TracingFilter 와 LazyTraceExecutor + RestTemplate
+### Servlet 기반 동작 원리 TracingFilter 와 LazyTraceExecutor + RestTemplate - 1
 
 https://blog.naver.com/gngh0101/221528363196
 
-### Webflux Reactive 기반 동작 원리 - 1
+### Webflux Reactive 기반 동작 원리 - 2
 
 https://blog.naver.com/gngh0101/221574435601
+
+
+### RestTemplateBuilder 동작 원리 - 3
+
+https://blog.naver.com/gngh0101/221796656166
