@@ -11,3 +11,11 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout : 3000
+        readTimeout: 3000
+        loggerLevel : FULL

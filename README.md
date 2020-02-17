@@ -108,3 +108,25 @@ Netflix 에서 개발된 Http client binder 으로 선언적 방식익이다.
 선언적 방식이아란, interface과 Annotation(Spring MVC RequestMapping)을 활용하여 구현체를 자동으로 생성해준다. 
 
  
+### Default Config
+ 
+ ```yml
+feign:
+  client:
+    config:
+      default:
+        connectTimeout : 3000
+        readTimeout: 3000
+        loggerLevel : FULL
+```
+
+feign.client.config.default yml 설정을 통해 기본 설정을 한다. 
+
+connectTimeout, readTimeout, loggerLevel, requestInterceptors 설정이 가능하다. 
+
+- loggerLevel
+    - NONE, No logging (DEFAULT).
+    - BASIC, Log only the request method and URL and the response status code and execution time.
+    - HEADERS, Log the basic information along with request and response headers.
+    - FULL, Log the headers, body, and metadata for both requests and responses.
+
