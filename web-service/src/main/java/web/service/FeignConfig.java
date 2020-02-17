@@ -11,4 +11,9 @@ public class FeignConfig {
         return new DefaultRequestInterceptor();
     }
 
+    @Bean
+    public DefaultErrorDecoder defaultErrorDecoder() {
+        return new DefaultErrorDecoder();
+    }
+
 }
