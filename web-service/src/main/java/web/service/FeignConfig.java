@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class FeignConfig {
-
     @Bean
     public DefaultRequestInterceptor defaultRequestInterceptor() {
         return new DefaultRequestInterceptor();
@@ -15,5 +14,4 @@ public class FeignConfig {
     public DefaultErrorDecoder defaultErrorDecoder() {
         return new DefaultErrorDecoder();
     }
-
 }
