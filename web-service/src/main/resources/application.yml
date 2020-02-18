@@ -19,3 +19,7 @@ feign:
         connectTimeout : 3000
         readTimeout: 3000
         loggerLevel : FULL
+      store:
+        name : store
+        url : http://localhost:8080
+
