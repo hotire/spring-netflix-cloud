@@ -103,7 +103,7 @@ https://blog.naver.com/gngh0101/221796656166
 
 ## Feign 
 
-Netflix 에서 개발된 Http client binder 으로 선언적 방식익이다. 
+Netflix 에서 개발된 Http client binder 으로 선언적 방식의 Client 이다. 
 
 선언적 방식이아란, interface과 Annotation(Spring MVC RequestMapping)을 활용하여 구현체를 자동으로 생성해준다. 
 
