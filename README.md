@@ -107,6 +107,7 @@ Netflix 에서 개발된 Http client binder 으로 선언적 방식의 Client �
 
 선언적 방식이아란, interface과 Annotation(Spring MVC RequestMapping)을 활용하여 구현체를 자동으로 생성해준다. 
 
+- Getting Started, Overriding Feign Defaults : https://blog.naver.com/gngh0101/221814614537
  
 ### Default Config
  
