@@ -20,6 +20,11 @@
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.marcosbarbero.cloud</groupId>
+      <artifactId>spring-cloud-zuul-ratelimit</artifactId>
+      <version>2.3.0.RELEASE</version>
+    </dependency>
   </dependencies>
 
 </project>
