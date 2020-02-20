@@ -32,6 +32,7 @@ class DefaultRequestInterceptorTest {
 
     @Test
     void verifyDefaultRequestInterceptor() {
+        // given
         final String reason = "reason";
         final int status = HttpStatus.OK.value();
         final Client client = (request, options) -> Response.builder().body(String.join("", request.headers().get("default")), Charset.defaultCharset()).request(request).status(status).headers(Map.of()).reason(reason).build();
@@ -42,8 +43,10 @@ class DefaultRequestInterceptorTest {
                                            .requestInterceptor(new DefaultRequestInterceptor())
                                            .target(TestClient.class, "http://localhost:8080");
 
+        // when
         final String result = testClient.findById("hotire");
 
+        // then
         assertThat(result).isEqualTo("config");
     }
 }
