@@ -35,7 +35,6 @@ class DefaultErrorDecoderTest {
         assertThat(result).isInstanceOf(FeignWrapperException.class);
     }
 
-
     @Test
     void verifyDefaultErrorDecoder() {
         final int status = HttpStatus.NOT_FOUND.value();
@@ -49,5 +48,4 @@ class DefaultErrorDecoderTest {
 
         assertThrows(FeignWrapperException.class, () -> testClient.findById("hotire"));
     }
-
 }

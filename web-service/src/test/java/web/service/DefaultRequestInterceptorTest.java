@@ -7,8 +7,6 @@ import feign.Response;
 import org.junit.jupiter.api.Test;
 import org.springframework.cloud.openfeign.support.SpringMvcContract;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.nio.charset.Charset;
 import java.util.Collection;
@@ -32,11 +30,6 @@ class DefaultRequestInterceptorTest {
         assertThat(result).containsKey("default");
     }
 
-    private interface TestClient {
-        @GetMapping("{id}")
-        String findById(@PathVariable String id);
-    }
-
     @Test
     void verifyDefaultRequestInterceptor() {
         final String reason = "reason";
@@ -53,6 +46,4 @@ class DefaultRequestInterceptorTest {
 
         assertThat(result).isEqualTo("config");
     }
-
-
 }
