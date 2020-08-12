@@ -131,3 +131,31 @@ connectTimeout, readTimeout, loggerLevel, requestInterceptors 설정이 가능�
     - HEADERS, Log the basic information along with request and response headers.
     - FULL, Log the headers, body, and metadata for both requests and responses.
 
+
+
+## Sleuth && Zipkin
+
+### Getting Started
+
+Zipkin
+
+### TraceHttpAutoConfiguration
+
+Zipkin request format 을 수정하기 위해선 HttpClientParser 를 사용해야 한다.
+
+http.host / http.method / http.path / http.url 기존 SleuthHttpClientParser 경우 
+
+전부 찍어줬지만, 현재는 그렇지 않다.
+
+~~~java
+   @Bean
+	@ConditionalOnProperty(name = "spring.sleuth.http.legacy.enabled",
+			havingValue = "true")
+	HttpClientParser sleuthHttpClientParser(TraceKeys traceKeys) {
+		return new SleuthHttpClientParser(traceKeys);
+	}
+~~~
+
+spring.sleuth.http.legacy.enabled: true 옵션을 주면 기존과 동일하게 사용할 수 있다. 
+
+legacy...라는 이름이 마음에 들진 않는다.
