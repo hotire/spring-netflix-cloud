@@ -14,6 +14,7 @@
     <module>service</module>
     <module>zipkin</module>
       <module>web-service</module>
+    <module>cloud-config</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
