@@ -3,6 +3,9 @@ package com.googlecode.hotire;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
+/**
+ * https://www.baeldung.com/spring-cloud-configuration
+ */
 @EnableConfigServer
 public class ConfigServer {
 
