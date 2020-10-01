@@ -1,4 +1,4 @@
-# spring-boot-cloud
+# spring-netflix-cloud
 study
 
 ## Hystrix
